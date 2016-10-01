@@ -1,0 +1,2171 @@
+﻿
+@{
+    ViewBag.Title = "GroupMobile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Comics Articles | Webdesigner Depot</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    @*<link rel="shortcut icon" href="wddfavicon2_n.ico" tppabs="http://netdna.webdesignerdepot.com/wddfavicon2_n.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="wddfavicon_n.png" tppabs="http://netdna.webdesignerdepot.com/wddfavicon_n.png" />
+    <link rel="apple-touch-icon" href="touch-icon_n.png" tppabs="http://netdna.webdesignerdepot.com/touch-icon_n.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144_n.png" tppabs="http://netdna.webdesignerdepot.com/apple-touch-icon-144x144_n.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114_n.png" tppabs="http://netdna.webdesignerdepot.com/apple-touch-icon-114x114_n.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72_n.png" tppabs="http://netdna.webdesignerdepot.com/apple-touch-icon-72x72_n.png" />
+
+
+    <link rel="alternate" type="application/rss+xml" title="Webdesigner Depot RSS Feed" href="http://www.webdesignerdepot.com/feed/" />
+    <link rel="pingback" href="http://www.webdesignerdepot.com/xmlrpc.php" />
+    <link href="12a02424-b77d-4941-bdba-33d1c2d7e25f.css" tppabs="http://cloud.webtype.com/css/12a02424-b77d-4941-bdba-33d1c2d7e25f.css" rel="stylesheet" type="text/css" />
+    <link href="32c335b3-fc71-4785-8eeb-ef5311ab5c1b.css" tppabs="http://cloud.webtype.com/css/32c335b3-fc71-4785-8eeb-ef5311ab5c1b.css" rel="stylesheet" type="text/css" />
+    <link href="8032ead3-f488-48cf-9cc3-1bc12bd2bd47.css" tppabs="http://cloud.webtype.com/css/8032ead3-f488-48cf-9cc3-1bc12bd2bd47.css" rel="stylesheet" type="text/css" />*@
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="~/Content/main_next.css-v=1474765638.css" tppabs="http://www.webdesignerdepot.com/app/css/main_next.css?v=1474765638.css">
+
+
+
+
+
+    <!-- All in One SEO Pack 2.3.9.2 by Michael Torbert of Semper Fi Web Design[122,166] -->
+   
+    <link rel='https://api.w.org/' href='http://www.webdesignerdepot.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.webdesignerdepot.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.webdesignerdepot.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.6.1" />
+    <script type="text/javascript">
+var ajaxurl = 'http://www.webdesignerdepot.com/wp-admin/admin-ajax.php';
+    </script>
+
+    <!-- WordPress Facebook Open Graph protocol plugin (WPFBOGP v2.0.13) http://rynoweb.com/wordpress-plugins/ -->
+    <meta property="fb:admins" content="1478130005" />
+    <meta property="fb:app_id" content="364823976950405" />
+    <meta property="og:url" content="http://www.webdesignerdepot.com/category/comics/" />
+    <meta property="og:title" content="Comics of the week #358" />
+    <meta property="og:site_name" content="Webdesigner Depot" />
+    <meta property="og:description" content="Web Design Resources and Tutorials" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2013/05/designer-depot.png" />
+    <meta property="og:image" content="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-3-1024x584.jpg" />
+    <meta property="og:locale" content="en_us" />
+
+</head>
+<body ng-app="myapp" ng-controller="mainController" class="archive category-comics category-295 blog-body" ng-class="bodyClass">
+
+
+
+  <!--<header id="main-header">
+        <div id="main-header-before"></div>
+
+        <div class="content-block">
+
+            <div id="mms-wrap">
+                <a class="mms-icon hamburger-to-close mhm-lnk" id="mms-icon-blog" data-list="msml-blog">
+                    <span class="hamburger-middle"></span>
+                </a>
+
+                <a class="mms-icon grd-to-close mhm-lnk" id="mms-icon-apps" data-list="msml-apps">
+                    <span class="grd-line grd-line-top">
+                        <span class="grd-middle"></span>
+                    </span>
+
+                    <span class="grd-line grd-line-middle">
+                        <span class="grd-middle"></span>
+                    </span>
+
+                    <span class="grd-line grd-line-bottom">
+                        <span class="grd-middle"></span>
+                    </span>
+
+                </a>
+            </div>
+
+
+            <div id="header-menu-links">
+                <div class="categories-tab-wrap">
+                    <a href="index.htm" tppabs="http://www.webdesignerdepot.com/" class="hm-lnk">
+                        <span class="livicon" data-color="#fab23a" data-n="align-left"></span>
+                        <span class="hm-lb">Blog</span>
+                    </a>
+                    <div class="categories-drop-down">
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/promo/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/promo/%27" tppabs="http://www.webdesignerdepot.com/category/promo" class="category-link">Advertorial</a>
+                        </div>
+                        <div>
+                            <a href="index-8.htm" tppabs="http://www.webdesignerdepot.com/category/branding" class="category-link">Branding</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/business/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/business/%27" tppabs="http://www.webdesignerdepot.com/category/business" class="category-link">Business</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/css/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/css/%27" tppabs="http://www.webdesignerdepot.com/category/css" class="category-link">CSS</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/code-demos/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/code-demos/%27" tppabs="http://www.webdesignerdepot.com/category/code-demos" class="category-link">Code Demos</a>
+                        </div>
+                        <div>
+                            <a href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics" class="category-link">Comics</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/contests/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/contests/%27" tppabs="http://www.webdesignerdepot.com/category/contests" class="category-link">Contests</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/deals-2/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/deals-2/%27" tppabs="http://www.webdesignerdepot.com/category/deals-2" class="category-link">Deals</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/design/%27" tppabs="http://www.webdesignerdepot.com/category/design" class="category-link">Design</a>
+                        </div>
+                        <div>
+                            <a href="index-6.htm" tppabs="http://www.webdesignerdepot.com/category/freebies" class="category-link">Freebies</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/funny/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/funny/%27" tppabs="http://www.webdesignerdepot.com/category/funny" class="category-link">Funny</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/html-5/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/html-5/%27" tppabs="http://www.webdesignerdepot.com/category/html-5" class="category-link">HTML</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/how-to/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/how-to/%27" tppabs="http://www.webdesignerdepot.com/category/how-to" class="category-link">How To</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/inspiration/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/inspiration/%27" tppabs="http://www.webdesignerdepot.com/category/inspiration" class="category-link">Inspiration</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/javascript/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/javascript/%27" tppabs="http://www.webdesignerdepot.com/category/javascript" class="category-link">JavaScript</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/marketing/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/marketing/%27" tppabs="http://www.webdesignerdepot.com/category/marketing" class="category-link">Marketing</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/mobile/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/mobile/%27" tppabs="http://www.webdesignerdepot.com/category/mobile" class="category-link">Mobile</a>
+                        </div>
+                        <div>
+                            <a href="index-10.htm" tppabs="http://www.webdesignerdepot.com/category/news" class="category-link">News</a>
+                        </div>
+                        <div>
+                            <a href="index-4.htm" tppabs="http://www.webdesignerdepot.com/category/resources" class="category-link">Resources</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/social-media/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/social-media/%27" tppabs="http://www.webdesignerdepot.com/category/social-media" class="category-link">Social Media</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/sponsored/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/sponsored/%27" tppabs="http://www.webdesignerdepot.com/category/sponsored" class="category-link">Sponsored</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/typography/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/typography/%27" tppabs="http://www.webdesignerdepot.com/category/typography" class="category-link">Typography</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/ux-design-2/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/ux-design-2/%27" tppabs="http://www.webdesignerdepot.com/category/ux-design-2" class="category-link">UX Design</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/usability/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/usability/%27" tppabs="http://www.webdesignerdepot.com/category/usability" class="category-link">Usability</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/web-development/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/web-development/%27" tppabs="http://www.webdesignerdepot.com/category/web-development" class="category-link">Web Development</a>
+                        </div>
+                        <div>
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/wordpress/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/wordpress/%27" tppabs="http://www.webdesignerdepot.com/category/wordpress" class="category-link">WordPress</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="index-6.htm" tppabs="http://www.webdesignerdepot.com/category/freebies" class="hm-lnk">
+                    <span class="livicon" data-color="#fab23a" data-n="download"></span>
+                    <span class="hm-lb">Freebies</span>
+                </a>
+
+                <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/app/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/app/#/deals%27" tppabs="http://www.webdesignerdepot.com/app#/deals" ui-sref="mightydeals" class="hm-lnk">
+                    <span class="livicon" data-color="#fab23a" data-n="tags"></span>
+                    <span class="hm-lb">Deals</span>
+
+                </a>
+
+                <a href="javascript:if(confirm(%27http://www.webdesignernews.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignernews.com/%27" tppabs="http://www.webdesignernews.com/" class="hm-lnk" target="_blank">
+                    <span class="livicon" data-color="#fab23a" data-n="rocket"></span>
+                    <span class="hm-lb">News</span>
+                </a>
+                <div class="apps-link-wrap">
+
+                    <span class="hm-lnk" id="apps-link">
+                        <span class="livicon" data-color="#fab23a" data-n="thumbnails-small"></span>
+                        <span class="hm-lb">Apps</span>
+
+                    </span>
+
+                    <div id="apps-list">
+
+
+
+
+
+                        <a href="index.htm" tppabs="http://www.webdesignerdepot.com/" class="app-lnk" id="app-article-lnk">
+                            <span data-tooltip="Insightful views, engaging editorials, and expansive tutorials on all things web design">Articles</span>
+                        </a><a href="behance.htm" tppabs="http://www.webdesignerdepot.com/app/behance" class="app-lnk" id="app-behance-lnk">
+                            <span data-tooltip="Browse the best design work online via the top rated projects on Behance">Behance</span>
+                        </a><a href="books.htm" tppabs="http://www.webdesignerdepot.com/app/books" class="app-lnk" id="app-books-lnk">
+                            <span data-tooltip="Discover your next favorite book, from CSS guides to Graphic Design classics, all available through Amazon">Books</span>
+                        </a><a href="codepen.htm" tppabs="http://www.webdesignerdepot.com/app/codepen" class="app-lnk" id="app-codepen-lnk">
+                            <span data-tooltip="Browse the latest code experiments direct from Codepen’s expert community">Codepen</span>
+                        </a><a href="comics-1.htm" tppabs="http://www.webdesignerdepot.com/app/comics" class="app-lnk" id="app-comics-lnk">
+                            <span data-tooltip="Work on the Web? Then you’ll laugh out loud at Jerry King’s hilarious comic take on web design">Comics</span>
+                        </a><a href="deals.htm" tppabs="http://www.webdesignerdepot.com/app/deals" class="app-lnk" id="app-mightydeals-lnk">
+                            <span data-tooltip="The best deals on the Web for designers and developers, direct from MightyDeals.com">Deals</span>
+                        </a><a href="dribbbles.htm" tppabs="http://www.webdesignerdepot.com/app/dribbbles" class="app-lnk" id="app-drible-lnk">
+                            <span data-tooltip="Get inspired by the very latest shots on Dribbble, and maybe try a rebound">Dribbble</span>
+                        </a><a href="events.htm" tppabs="http://www.webdesignerdepot.com/app/events" class="app-lnk" id="app-conferences-lnk">
+                            <span data-tooltip="Keep your finger on the pulse of the community with all the upcoming design events in your area">Events</span>
+                        </a><a href="github.htm" tppabs="http://www.webdesignerdepot.com/app/github" class="app-lnk" id="app-github-lnk">
+                            <span data-tooltip="Power through your next development project with the top resources hosted on Github">Github</span>
+                        </a><a href="interviews.htm" tppabs="http://www.webdesignerdepot.com/app/interviews" class="app-lnk" id="app-interviews-lnk">
+                            <span data-tooltip="Browse through hundreds of design videos, and get inspired by expert views on the design industry">Interviews</span>
+                        </a><a href="photos.htm" tppabs="http://www.webdesignerdepot.com/app/photos" class="app-lnk" id="app-photos-lnk">
+                            <span data-tooltip="Thousands of free images to use in your next project. Free for personal and commercial use.">Photos</span>
+                        </a><a href="play.htm" tppabs="http://www.webdesignerdepot.com/app/play" class="app-lnk" id="app-play-lnk">
+                            <span data-tooltip="Grab some r‘n’r with some of the coolest eye candy, demos and games on the Web. Press SHUFFLE for more!">Play</span>
+                        </a><a href="podcasts.htm" tppabs="http://www.webdesignerdepot.com/app/podcasts" class="app-lnk" id="app-podcasts-lnk">
+                            <span data-tooltip="Keep up to date with the latest trends in the industry with the most engaging podcasts">Podcasts</span>
+                        </a><a href="quotes.htm" tppabs="http://www.webdesignerdepot.com/app/quotes" class="app-lnk" id="app-quotes-lnk">
+                            <span data-tooltip="Get inspired by the wise words of designers, developers, entrepreneurs, and technologists">Quotes</span>
+                        </a><a href="scripts.htm" tppabs="http://www.webdesignerdepot.com/app/scripts" class="app-lnk" id="app-code-lnk">
+                            <span data-tooltip="Find answers to your coding problems in our huge archive of tried and tested resources and solutions">Scripts</span>
+                        </a><a href="vectors.htm" tppabs="http://www.webdesignerdepot.com/app/vectors" class="app-lnk" id="app-vectors-lnk">
+                            <span data-tooltip="Browse through our extensive catalog of free vectors, free for personal and commercial use">Vectors</span>
+                        </a><a href="videos.htm" tppabs="http://www.webdesignerdepot.com/app/videos" class="app-lnk" id="app-videos-lnk">
+                            <span data-tooltip="Sit back, relax, and enjoy videos of designers being interviewed, conference talks  and more">Videos</span>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="index.htm" tppabs="http://www.webdesignerdepot.com/" id="logo">
+                <span id="logo-svg-wrap">
+
+                    <svg version="1.1" id="logo_Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="43px" height="36px" viewBox="0 0 106 88.157" enable-background="new 0 0 100.542 83-3.226" tppabs="http://www.webdesignerdepot.com/category/comics/new 0 0 100.542 83.226"
+                         shape-rendering="geometricPrecision"
+                         xml:space="preserve">
+<path id="logo_svg_path" fill="#fab23a" stroke-width="1" stroke="#fab23a" d="M30.779,87.342c-10.015,0-15.483-5.632-15.814-16.283c-0.115-3.693,1.021-10.996,4.603-19.425l4.601-11.091
+	c0.991-2.274,1.971-4.424,2.882-6.42c2.838-6.22,4.077-9.091,5.609-13.294c0.249-0.684,0.164-1.371-0.236-1.943
+	c-0.585-0.834-1.76-1.293-3.313-1.293c-1.165,0-5.265,0.331-9.194,4.565c-2.986,3.218-4.644,6.94-4.544,10.21
+	c0.023,0.738,0.069,1.364,0.198,2.001c0.449,2.261-0.557,4.408-2.507,5.348c-1.106,0.533-2.107,0.762-3.141,0.762
+	c-3.528,0-6.446-2.584-6.792-6.012c-0.059-0.598-0.098-1.194-0.115-1.776c-0.095-3.092,0.464-11.025,7.69-17.914
+	c9.242-8.81,18.947-10.659,25.459-10.659c9.34,0,12.904,2.889,13.145,10.661c0.175,5.717-2.874,14.076-7.505,24.868
+	c-1.647,3.829-3.695,8.593-5.807,13.938c-2.289,5.871-3.174,9.813-3.056,13.609c0.108,3.591,2.325,5.82,5.781,5.82
+	c3.916,0,7.334-3.764,11.26-9.417l0.207-0.3l-0.01-0.367c-0.395-14.747,4.203-30.483,10.931-37.421
+	c2.173-2.245,4.416-3.385,6.659-3.385c4.659,0,7.523,2.661,7.659,7.118c0.387,12.504-7.647,26.511-13.724,35.958l-0.271,0.425
+	l0.136,0.484c1.25,4.439,3.172,6.689,5.715,6.689c1.964,0,4.925-0.585,7.886-3.379c6.841-6.461,13.163-15.824,13.094-40.379
+	c-0.031-3.513-1.088-7.324-2.109-11.011c-1.376-4.957-2.672-9.638-0.96-11.985c0.857-1.178,2.507-1.802,5.045-1.907l0.487-0.01
+	c8.981,0,12.504,10.8,12.791,20.048c0.578,18.808-6.93,39.586-18.685,51.708c-6.172,6.366-12.991,9.731-19.72,9.731
+	c-5.214,0-9.474-2.862-12.319-8.274l-0.744-1.422l-1.075,1.193C44.775,83.993,38.168,87.342,30.779,87.342" />
+</svg>
+
+                </span>
+            </a>
+
+
+            <span class="search-ico icon-search blog-search-icon" id="search-f-btn" data-color="#fab23a" data-n="search"></span>
+
+            <form action="http://www.webdesignerdepot.com/" method="get" id="search-form">
+
+                <input type="text" value="" placeholder="Search" id="search-field" ng-model="searchRootTerm" />
+
+                <div class="search-drop-menu">
+                    <span class="search-category-label" ng-bind="root.searchCategoryType"></span>
+                    <span class="icon-down-dir"></span>
+
+
+                    <div class="search-options" id="search-options">
+
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/app/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/app/#%27" tppabs="http://www.webdesignerdepot.com/app#">
+                            <span></span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+    </header> -->
+
+
+    <div id="content-wrap" class="">
+        <div id="content" ui-view="mainView" autoscroll="false">
+
+            <!--<div id="home-slider" data-next-page="2">-->
+
+            <div class="content-block hp">
+                <div id="wdd-articles">
+
+                    <div class="hp-left-c">
+                        <div class="article-hp-wdd-cls">
+
+
+                            <h1 class="page-title archive-title line-title">
+
+
+                                Comics articles
+                            </h1>
+
+
+
+
+
+
+
+
+
+
+
+                            <article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="index-1.htm" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-358/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-3-1024x584.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/feat-3-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-3-1024x584.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-3-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-3-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-3-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-3-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="index-1.htm" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-358/"
+                                               class="anim-link">Comics of the week #358</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                16 hrs ago
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-358/" data-href="index-1.htm" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-358/"
+                                                       data-title="Comics of the week #358"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23358&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-358/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23358&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-358/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23358&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-358/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-2-1024x584.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/feat-2-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-2-1024x584.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-2-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-2-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-2-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-2-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/"
+                                               class="anim-link">Comics of the week #357</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Sep. 17, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/"
+                                                       data-title="Comics of the week #357"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23357&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23357&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23357&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-357/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-1-1024x551.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1-1024x551.jpg*/;">
+
+                                        <img width="842" height="453" src="feat-1-1024x551.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1-1024x551.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1-1024x551.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1-300x161.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1-768x413.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/"
+                                               class="anim-link">Comics of the week #356</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Cameron Chapman" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Cameron-Chapman  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Cameron-Chapman%27" tppabs="http://www.webdesignerdepot.com/author/Cameron-Chapman">
+                                                <img src="4b705c3a0e16bbe30fb5919c53ce2fb2-s=48.jpg" tppabs="http://www.gravatar.com/avatar/4b705c3a0e16bbe30fb5919c53ce2fb2?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Cameron Chapman" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Cameron-Chapman  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Cameron-Chapman%27" tppabs="http://www.webdesignerdepot.com/author/Cameron-Chapman">Cameron Chapman</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Sep. 10, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/"
+                                                       data-title="Comics of the week #356"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23356&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23356&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23356&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-356/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-1024x584.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-1024x584.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/09/feat-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/09/feat-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/"
+                                               class="anim-link">Comics of the week #355</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Sep. 03, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/%27" tppabs="http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/"
+                                                       data-title="Comics of the week #355"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23355&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23355&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23355&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/09/comics-of-the-week-355/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-3-1024x584-1.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/08/feat-3-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-3-1024x584-1.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-3-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-3-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-3-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-3-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/"
+                                               class="anim-link">Comics of the week #354</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Aug. 27, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/"
+                                                       data-title="Comics of the week #354"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23354&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23354&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23354&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-354/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-2-1024x584-1.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/08/feat-2-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-2-1024x584-1.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-2-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-2-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-2-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-2-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/"
+                                               class="anim-link">Comics of the week #353</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Aug. 20, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/"
+                                                       data-title="Comics of the week #353"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23353&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23353&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23353&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-353/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-1-1024x584.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-1-1024x584.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/"
+                                               class="anim-link">Comics of the week #352</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Aug. 13, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/"
+                                                       data-title="Comics of the week #352"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23352&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23352&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23352&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-352/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-1024x584-1.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-1024x584-1.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/08/feat-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/08/feat-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/"
+                                               class="anim-link">Comics of the week #351</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Aug. 06, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/%27" tppabs="http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/"
+                                                       data-title="Comics of the week #351"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23351&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23351&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23351&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/08/comics-of-the-week-351/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-3-1024x584-2.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/07/feat-3-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-3-1024x584-2.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-3-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-3-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-3-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-3-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/"
+                                               class="anim-link">Comics of the week #350</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Jul. 30, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/"
+                                                       data-title="Comics of the week #350"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23350&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23350&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23350&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-350/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-2-1024x584-2.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/07/feat-2-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-2-1024x584-2.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-2-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-2-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-2-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-2-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/"
+                                               class="anim-link">Comics of the week #349</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Jul. 23, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/"
+                                                       data-title="Comics of the week #349"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23349&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23349&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23349&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-349/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-1-1024x584-1.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-1-1024x584-1.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/"
+                                               class="anim-link">Comics of the week #348</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by WebdesignerDepot Staff" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/WebdesignerDepot-Staff/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/WebdesignerDepot-Staff/%27" tppabs="http://www.webdesignerdepot.com/author/WebdesignerDepot-Staff">
+                                                <img src="d12a9427abe9369fb2a4815fdc0d7ca7-s=48.png" tppabs="http://www.gravatar.com/avatar/d12a9427abe9369fb2a4815fdc0d7ca7?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by WebdesignerDepot Staff" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/WebdesignerDepot-Staff/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/WebdesignerDepot-Staff/%27" tppabs="http://www.webdesignerdepot.com/author/WebdesignerDepot-Staff">WebdesignerDepot Staff</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Jul. 16, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/"
+                                                       data-title="Comics of the week #348"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23348&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23348&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23348&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-348/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-1024x584-2.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-1024x584-2.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/07/feat-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/07/feat-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/"
+                                               class="anim-link">Comics of the week #347</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Jul. 09, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/"
+                                                       data-title="Comics of the week #347"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23347&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23347&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23347&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-347/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-4-1024x584.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/06/feat-4-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-4-1024x584.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/06/feat-4-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/06/feat-4-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/06/feat-4-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/06/feat-4-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/"
+                                               class="anim-link">Comics of the week #346</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Jul. 02, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/%27" tppabs="http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/"
+                                                       data-title="Comics of the week #346"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23346&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23346&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23346&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/07/comics-of-the-week-346/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article><article class="article-hp-wdd-cl">
+
+                                <div class="article-hp-cl-content">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/%27" tppabs="http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/"
+                                       class="hp-wdd-img-lnk"
+                                       style="background-image: url(feat-3-1024x584-3.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/06/feat-3-1024x584.jpg*/;">
+
+                                        <img width="842" height="480" src="feat-3-1024x584-3.jpg" tppabs="http://netdna.webdesignerdepot.com/uploads/2016/06/feat-3-1024x584.jpg" class="hp-wdd-img wp-post-image" alt="feat" srcset="http://netdna.webdesignerdepot.com/uploads/2016/06/feat-3-1024x584.jpg 1024w, http://netdna.webdesignerdepot.com/uploads/2016/06/feat-3-300x171.jpg 300w, http://netdna.webdesignerdepot.com/uploads/2016/06/feat-3-768x438.jpg 768w" sizes="(max-width: 842px) 100vw, 842px" />
+
+                                    </a>
+
+
+                                    <div class="hp-article-info">
+
+
+                                        <div class="hp-cat">
+                                            <a data-tooltip="See all posts related to Comics"
+                                               class="hp-category" href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics/">Comics</a>
+                                        </div>
+
+                                        <h2 class="hp-article-title">
+                                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/%27" tppabs="http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/"
+                                               class="anim-link">Comics of the week #345</a>
+                                        </h2>
+
+                                        <div class="hp-excerpt">
+                                            Every week we feature a set of comics created exclusively for WDD. The content revolves around web design, blogging and funny situations that we encounter in our daily lives as designers. These great cartoons are created by Jerry King, an award-winning cartoonist who’s one of the most published, prolific and versatile...
+                                        </div>
+
+                                        <div class="hp-post-pub-info">
+
+
+                                            <a data-tooltip="See all posts by Jerry King" class="haa-lnk" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">
+                                                <img src="83385213618f826eb16070e0b4642281-s=48.jpg" tppabs="http://www.gravatar.com/avatar/83385213618f826eb16070e0b4642281?s=48" alt="" class="hpppi-author-avatar" />
+                                            </a>
+
+                                            <span class="hpppi-author">
+
+
+
+                                                By <a data-tooltip="See all posts by Jerry King" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/author/Jerry-King/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/author/Jerry-King/%27" tppabs="http://www.webdesignerdepot.com/author/Jerry-King">Jerry King</a>
+                                                <span class="hpppi-separator">•</span>
+                                            </span>
+
+                                            <span class="hppi-time">
+                                                <span class="icon-clock-1"></span>
+                                                Jun. 25, 2016
+                                            </span>
+
+                                            <span class="hpppi-separator">•</span>
+
+                                            <span class="hp-inline-shr">
+
+                                                <span class="hpsi-row">
+                                                    <a class="icon-facebook"
+                                                       href="javascript:void(0);" data-url="http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/" data-href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/%27" tppabs="http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/"
+                                                       data-title="Comics of the week #345"
+                                                       onclick="openFbShare(this)"></a>
+                                                </span>
+                                                <span class="hpsi-row">
+                                                    <a class="icon-twitter"
+                                                       data-via="www.webdesignerdepot.com"
+                                                       onclick="return openTwShare(this);"
+                                                       href="javascript:if(confirm(%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23345&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23345&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/%27" tppabs="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.webdesignerdepot.com%2F&via=designerdepot&text=Comics+of+the+week+%23345&source=tweetbutton&url=http://www.webdesignerdepot.com/2016/06/comics-of-the-week-345/" target="_blank"></a>
+                                                </span>
+
+                                            </span>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </article>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="hp-pop-posts">
+
+
+                        <h2 class="popular-posts-title"><span>Popular posts</span></h2>
+
+
+                        <div class="popular-posts-wdd">
+                            <div class="popular-post-wdd">
+
+
+
+
+                                <span class="pop-img-stub"
+                                      style="background-image: url(featured_email-300x165.png)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/featured_email-300x165.png*/;">
+                                </span>
+
+                                <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/%27" tppabs="http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/" class="pop-img-link"></a>
+
+
+                                <div class="pop-post-info">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/%27" tppabs="http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/" class="spr-number" data-num="1"></a>
+
+                                    <h2 class="popular-post-title">
+
+                                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/%27" tppabs="http://www.webdesignerdepot.com/2016/09/email-finally-wakes-up-to-responsive-design/" class="sb-pop-post-lnk">
+                                            Email finally wakes up to responsive design
+                                        </a>
+                                    </h2>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="popular-post-wdd">
+
+
+
+
+                                <span class="pop-img-stub"
+                                      style="background-image: url(featured_speed-300x165.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/featured_speed-300x165.jpg*/;">
+                                </span>
+
+                                <a href="index-11.htm" tppabs="http://www.webdesignerdepot.com/2016/09/a-tactical-approach-for-faster-loading-media/" class="pop-img-link"></a>
+
+
+                                <div class="pop-post-info">
+
+                                    <a href="index-11.htm" tppabs="http://www.webdesignerdepot.com/2016/09/a-tactical-approach-for-faster-loading-media/" class="spr-number" data-num="2"></a>
+
+                                    <h2 class="popular-post-title">
+
+                                        <a href="index-11.htm" tppabs="http://www.webdesignerdepot.com/2016/09/a-tactical-approach-for-faster-loading-media/" class="sb-pop-post-lnk">
+                                            A tactical approach for faster-loading media
+                                        </a>
+                                    </h2>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="popular-post-wdd">
+
+
+
+
+                                <span class="pop-img-stub"
+                                      style="background-image: url(featured_onboarding-300x165.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/featured_onboarding-300x165.jpg*/;">
+                                </span>
+
+                                <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/%27" tppabs="http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/" class="pop-img-link"></a>
+
+
+                                <div class="pop-post-info">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/%27" tppabs="http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/" class="spr-number" data-num="3"></a>
+
+                                    <h2 class="popular-post-title">
+
+                                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/%27" tppabs="http://www.webdesignerdepot.com/2016/09/how-great-onboarding-leads-to-great-ux/" class="sb-pop-post-lnk">
+                                            How great onboarding leads to great UX
+                                        </a>
+                                    </h2>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="popular-post-wdd">
+
+
+
+
+                                <span class="pop-img-stub"
+                                      style="background-image: url(featured_deal-300x165.png)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/07/featured_deal-300x165.png*/;">
+                                </span>
+
+                                <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/%27" tppabs="http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/" class="pop-img-link"></a>
+
+
+                                <div class="pop-post-info">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/%27" tppabs="http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/" class="spr-number" data-num="4"></a>
+
+                                    <h2 class="popular-post-title">
+
+                                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/%27" tppabs="http://www.webdesignerdepot.com/2016/09/the-only-way-to-sell-design/" class="sb-pop-post-lnk">
+                                            The only way to sell design
+                                        </a>
+                                    </h2>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="popular-post-wdd">
+
+
+
+
+                                <span class="pop-img-stub"
+                                      style="background-image: url(featured_new-300x165.jpg)/*tpa=http://netdna.webdesignerdepot.com/uploads/2016/09/featured_new-300x165.jpg*/;">
+                                </span>
+
+                                <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/%27" tppabs="http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/" class="pop-img-link"></a>
+
+
+                                <div class="pop-post-info">
+
+                                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/%27" tppabs="http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/" class="spr-number" data-num="5"></a>
+
+                                    <h2 class="popular-post-title">
+
+                                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/%27" tppabs="http://www.webdesignerdepot.com/2016/09/whats-new-for-designers-september-2016/" class="sb-pop-post-lnk">
+                                            What’s new for designers, September 2016
+                                        </a>
+                                    </h2>
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+
+                        <h2 class="popular-posts-title"><span>Our apps</span></h2>
+
+                        <div id="hp-apps-list">
+
+                            <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/app/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/app/#%27" tppabs="http://www.webdesignerdepot.com/app#"
+                               class="app-lnk"
+                               data-app-id=""
+                               data-text="">
+                                <span data-tooltip=""></span>
+                            </a>
+                        </div>
+
+                    
+
+
+                    </div>
+                    
+
+                    <div class="pagination-wrap">
+                        <div class="pagination-block">
+                            <ul class="pagination"><li class='disabled'><a href='#'><span class="disabled"><span class='icon-left-dir'></span> Prev</span></a></li><li><a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/comics/page/2/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/comics/page/2/%27" tppabs="http://www.webdesignerdepot.com/category/comics/page/2/" class="navbutton nb-next"><span>Next <span class='icon-right-dir'></span></span></a></li></ul>
+                            <form class="paging-jump-form" action="" method="get">
+                                <span>Page</span>
+                                <input ng-keyup="$event.keyCode == 13 && changeJumpPage()" type="text" name="paged" value="1" /> <span>of 24</span>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="fixed-controls">
+
+
+                <a href="#main-header" class="scroll-to fxc-row" data-tooltip="Scroll to top"><span class="icon-up-small"></span></a>
+                <a href="#body-end" class="fxc-row scroll-to" data-tooltip="Scroll to bottom"><span class="icon-down-small"></span></a>
+
+
+
+
+                <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/comics/page/2/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/comics/page/2/%27" tppabs="http://www.webdesignerdepot.com/category/comics/page/2/" data-tooltip="Next page" class="fxc-row "><span class="icon-right-small"></span></a>
+
+
+
+            </div>
+
+
+
+
+        </div> <!-- content -->
+
+    </div> <!-- content-wrap -->
+
+    <div id="icon-preloader">
+        <label></label>
+        <span class="app-title"></span>
+    </div>
+
+    <div id="pre-footer"></div>
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div id="footer-before">
+        </div>
+        <iframe style="display:none;" name="sb-subscribe-form-frame" id="sb-subscribe-form-frame"></iframe>
+        <form id="footer-nl" target="sb-subscribe-form-frame" action="http://www.webdesignerdepot.com/newsletter" method="post">
+            <div class="content-block">
+
+                <div class="ftnl-left">
+                    <div id="join-nl-text">
+                        Join our <span class="jnt-subscribers">855,437</span> subscribers and get access to the latest tools, freebies, product announcements and much more!
+                    </div>
+
+
+                </div>
+                <div class="ftnl-right">
+                    <div>
+                        <input type="text" class="inactive footer-text-field" name="email" id="footer-subscribe-email" value="" placeholder="Your email address...">
+                        <!--<input type="submit" class="footer-submit-btn" id="footer-subscribe-btn" value="Subscribe me">-->
+                        <button class="footer-submit-btn" id="footer-subscribe-btn" data-text="Subscribe me" data-replacing-text="LET’S DO IT!">Subscribe me</button>
+
+                    </div>
+
+                    <input type="hidden" name="ref" id="ref" value="wddfooter">
+                    <input type="hidden" name="ip" id="nl_sb_ip_field" value="">
+                    <input type="hidden" name="signupurl" id="signupurl" value="http://www.webdesignerdepot.com/">
+                </div>
+
+
+
+            </div>
+        </form>
+
+
+        <div id="footer-nav" class="content-block">
+            <div class="footer-left">
+                <nav id="footer-nav-links">
+                    <a href="index.htm" tppabs="http://www.webdesignerdepot.com/">Home</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/app/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/app/#/apps%27" tppabs="http://www.webdesignerdepot.com/app#/apps">Apps</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/about  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/about%27" tppabs="http://www.webdesignerdepot.com/about">About</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/categories  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/categories%27" tppabs="http://www.webdesignerdepot.com/categories" id="ft-cats-lnk">Categories</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/archive  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/archive%27" tppabs="http://www.webdesignerdepot.com/archive">Archive</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/authors  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/authors%27" tppabs="http://www.webdesignerdepot.com/authors">Authors</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/newsletter  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/newsletter%27" tppabs="http://www.webdesignerdepot.com/newsletter">Newsletter</a>
+                    <a class="m-contact-link" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/contact?sm=advertise  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/contact?sm=advertise%27" tppabs="http://www.webdesignerdepot.com/contact?sm=advertise">Advertise</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/write-for-us  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/write-for-us%27" tppabs="http://www.webdesignerdepot.com/write-for-us">Write for us</a>
+                    <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/disclaimer-and-privacy-policy  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/disclaimer-and-privacy-policy%27" tppabs="http://www.webdesignerdepot.com/disclaimer-and-privacy-policy">Legal</a>
+                    <a class="m-contact-link" href="javascript:if(confirm(%27http://www.webdesignerdepot.com/contact  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/contact%27" tppabs="http://www.webdesignerdepot.com/contact">Contact</a>
+
+                </nav>
+
+                <div id="footer-shares">
+                    <a class="fts-label" href="javascript:if(confirm(%27https://www.facebook.com/webdesignerdepot  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.facebook.com/webdesignerdepot%27" tppabs="https://www.facebook.com/webdesignerdepot">
+                        <span class="icon-facebook se-icon">
+                            <span class="icon-facebook sei-icon"></span>
+                        </span>
+                        <span class="fts-count">210,547</span>
+                    </a>
+
+                    <a href="javascript:if(confirm(%27http://twitter.com/designerdepot  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://twitter.com/designerdepot%27" tppabs="http://twitter.com/designerdepot" class="fts-label">
+                        <span class="icon-twitter se-icon">
+                            <span class="icon-twitter sei-icon"></span>
+                        </span>
+                        <span class="fts-count">612,458</span>
+                    </a>
+
+                    <a class="fts-label" href="javascript:if(confirm(%27http://feeds2.feedburner.com/webdesignerdepot?format=html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://feeds2.feedburner.com/webdesignerdepot?format=html%27" tppabs="http://feeds2.feedburner.com/webdesignerdepot?format=html">
+                        <span class="icon-rss se-icon">
+                            <span class="icon-rss sei-icon"></span>
+                        </span>
+                        <span class="fts-count">90,777</span>
+                    </a>
+
+                </div>
+
+                <div class="footer-copy">
+                    ©  2010-2016 All Rights Reserved
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </footer>
+    <div id="m-side-menu">
+        <div id="m-side-menu-list">
+
+            <div id="msml-blog" class="msml-part">
+
+                <div id="m-search-box" class="">
+                    <form action="http://www.webdesignerdepot.com/" id="m-searchform" method="get">
+
+                        <div id="m-fastsearch-wrap">
+                            <input accesskey="s" type="text" class="inactive" name="s" id="m-fastsearch" placeholder="Search" autocomplete="off">
+                            <div id="m-fastsearch-options" onchange="mFastSearchChange(this)">
+                                <label id="m-fastsearch-label">
+                                    Articles
+                                </label>
+                                <span class="icon-down-dir"></span>
+                                <select id="m-fastsearch-options-select"></select>
+                            </div>
+                        </div>
+
+                        <a href="#" id="m-search-btn-link" class="icon-search"></a>
+
+                    </form>
+
+
+                </div>
+                <div class="msml-blog-categories">
+                    <div>
+                        <a href="index-8.htm" tppabs="http://www.webdesignerdepot.com/category/branding" class="category-link">Branding</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/business/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/business/%27" tppabs="http://www.webdesignerdepot.com/category/business" class="category-link">Business</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/css/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/css/%27" tppabs="http://www.webdesignerdepot.com/category/css" class="category-link">CSS</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/code-demos/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/code-demos/%27" tppabs="http://www.webdesignerdepot.com/category/code-demos" class="category-link">Code Demos</a>
+                    </div>
+                    <div>
+                        <a href="index-2.htm" tppabs="http://www.webdesignerdepot.com/category/comics" class="category-link">Comics</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/contests/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/contests/%27" tppabs="http://www.webdesignerdepot.com/category/contests" class="category-link">Contests</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/deals-2/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/deals-2/%27" tppabs="http://www.webdesignerdepot.com/category/deals-2" class="category-link">Deals</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/design/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/design/%27" tppabs="http://www.webdesignerdepot.com/category/design" class="category-link">Design</a>
+                    </div>
+                    <div>
+                        <a href="index-6.htm" tppabs="http://www.webdesignerdepot.com/category/freebies" class="category-link">Freebies</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/funny/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/funny/%27" tppabs="http://www.webdesignerdepot.com/category/funny" class="category-link">Funny</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/html-5/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/html-5/%27" tppabs="http://www.webdesignerdepot.com/category/html-5" class="category-link">HTML</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/how-to/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/how-to/%27" tppabs="http://www.webdesignerdepot.com/category/how-to" class="category-link">How To</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/inspiration/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/inspiration/%27" tppabs="http://www.webdesignerdepot.com/category/inspiration" class="category-link">Inspiration</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/javascript/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/javascript/%27" tppabs="http://www.webdesignerdepot.com/category/javascript" class="category-link">JavaScript</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/marketing/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/marketing/%27" tppabs="http://www.webdesignerdepot.com/category/marketing" class="category-link">Marketing</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/mobile/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/mobile/%27" tppabs="http://www.webdesignerdepot.com/category/mobile" class="category-link">Mobile</a>
+                    </div>
+                    <div>
+                        <a href="index-10.htm" tppabs="http://www.webdesignerdepot.com/category/news" class="category-link">News</a>
+                    </div>
+                    <div>
+                        <a href="index-4.htm" tppabs="http://www.webdesignerdepot.com/category/resources" class="category-link">Resources</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/social-media/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/social-media/%27" tppabs="http://www.webdesignerdepot.com/category/social-media" class="category-link">Social Media</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/sponsored/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/sponsored/%27" tppabs="http://www.webdesignerdepot.com/category/sponsored" class="category-link">Sponsored</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/typography/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/typography/%27" tppabs="http://www.webdesignerdepot.com/category/typography" class="category-link">Typography</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/ux-design-2/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/ux-design-2/%27" tppabs="http://www.webdesignerdepot.com/category/ux-design-2" class="category-link">UX Design</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/usability/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/usability/%27" tppabs="http://www.webdesignerdepot.com/category/usability" class="category-link">Usability</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/web-development/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/web-development/%27" tppabs="http://www.webdesignerdepot.com/category/web-development" class="category-link">Web Development</a>
+                    </div>
+                    <div>
+                        <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/category/wordpress/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/category/wordpress/%27" tppabs="http://www.webdesignerdepot.com/category/wordpress" class="category-link">WordPress</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="msml-apps" class="msml-part">
+                <a href="javascript:if(confirm(%27http://www.webdesignerdepot.com/app/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.webdesignerdepot.com/app/#%27" tppabs="http://www.webdesignerdepot.com/app#">
+                    <span class="app-icon"></span>
+                    <span class="msmi-label"></span>
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0025/7182.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+    <script type='text/javascript' src="wp-embed.min.js-ver=4.6.1.js" tppabs="http://netdna.webdesignerdepot.com/js/wp-embed.min.js?ver=4.6.1"></script>
+    <script type='text/javascript' src="jquery.js-ver=1.12.4.js" tppabs="http://netdna.webdesignerdepot.com/js/jquery/jquery.js?ver=1.12.4"></script>
+
+    <script type='text/javascript' src="settings.js-v=3.js" tppabs="http://www.webdesignerdepot.com/app/js/settings.js?v=3"></script>
+
+
+
+    <script src="main.js-v=1474765638.js" tppabs="http://www.webdesignerdepot.com/app/js/main.js?v=1474765638"></script>
+
+
+
+
+
+
+
+
+
+
+    <!--[if lt IE 8]>
+    <script src="json2.min.js" tppabs="http://www.webdesignerdepot.com/app/js/json2.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+try {
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-331696-9']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script');
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+   'http://www/') + '.google-analytics.com/ga.js';
+ ga.setAttribute('async', 'true');
+ document.documentElement.firstChild.appendChild(ga);
+})();
+
+} catch(err) {}
+
+    </script>
+
+
+
+
+
+
+
+
+    <!--[if lte IE 8]>
+      <script type="text/javascript" src="html5shiv.js" tppabs="http://www.webdesignerdepot.com/wp-content/themes/wdd2015/js/html5shiv.js"></script>
+      <script type="text/javascript" src="css3-mediaqueries.js" tppabs="http://www.webdesignerdepot.com/wp-content/themes/wdd2015/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9 ]>
+    <script>
+    var is_ie_lte9 = true;
+    </script>
+    <![endif]-->
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+try {
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-331696-9']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script');
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+   'http://www/') + '.google-analytics.com/ga.js';
+ ga.setAttribute('async', 'true');
+ document.documentElement.firstChild.appendChild(ga);
+})();
+
+} catch(err) {}
+
+    </script>
+
+    <div id="body-end"></div>
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.996 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-09-24 22:07:18 -->
+<!-- super cache -->
+
